@@ -1,4 +1,4 @@
-import { saveAs } from "file-saver/FileSaver"
+import { saveAs } from "file-saver"
 
 import "normalize.css"
 import "./scss/main.scss"
@@ -18,14 +18,14 @@ import "./images/patterns/8.jpg"
 import "./images/banner.png"
 
 var patterns = [
-  "images/1.jpg",
-  "images/2.jpg",
-  "images/3.jpg",
-  "images/4.jpg",
-  "images/5.jpg",
-  "images/6.jpg",
-  "images/7.jpg",
-  "images/8.jpg"
+  "img/1.jpg",
+  "img/2.jpg",
+  "img/3.jpg",
+  "img/4.jpg",
+  "img/5.jpg",
+  "img/6.jpg",
+  "img/7.jpg",
+  "img/8.jpg"
 ]
 
 var elements = {
@@ -54,12 +54,12 @@ function drawCanvas(src) {
     context.drawImage(image, 55, 150, 263, 340)
 
     var outer = new Image()
-    outer.src = "images/tshirt1-outer.png"
+    outer.src = "img/tshirt1-outer.png"
     outer.onload = () => {
       context.drawImage(outer, 0, 0, 375, 500)
 
       var inner = new Image()
-      inner.src = "images/tshirt1-inner.png"
+      inner.src = "img/tshirt1-inner.png"
       inner.onload = () => {
         context.globalAlpha = 0.30
         context.drawImage(inner, 0, 0, 375, 500)
