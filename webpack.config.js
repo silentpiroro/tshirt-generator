@@ -51,7 +51,10 @@ module.exports = {
         }, {
             test: /\.html$/,
             use: {
-                loader: "html-loader"
+                loader: "html-loader",
+                options: {
+                	minimize: false
+                }
             }
         }]
     },
@@ -59,7 +62,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
             filename: "index.html",
-            minify: "index.html",
             minify: false
         }),
         new MiniCssExtractPlugin({
