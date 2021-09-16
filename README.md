@@ -6,9 +6,9 @@ Put an image on a t-shirt and download it.
 
 Based on Webpack 5.
 
-1. Download dependencies with npm i.
-2. Build with npm run build.
-3. Statically host dist/.
+1. Download dependencies with `npm i`.
+2. Build with `npm run build`.
+3. Statically host `dist/`.
 
 ## Preview
 
